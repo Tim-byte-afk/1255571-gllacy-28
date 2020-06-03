@@ -6,187 +6,179 @@
   </head>
   <body>
     <header class="main-header">
-      <a class="main-header_logo">
-        <img src="https://via.placeholder.com/150x100" alt="Логотип сайта Глейси">
-      </a>
-      <nav class="main-header_navigation">
-        <ul class="main-header-site_navigation">
-          <li><a href="catalog.html" >Каталог</a></li>
-          <li><a href="" >Доставка и оплата</a></li>
-          <li><a href="" >О компании</a></li>
-        </ul>
-      </nav> 
-        <ul class="main-header-user_navigation">
-          <li><span></span></li>
-          <li><span>Вход</span></li>
-          <li><span>Корзина</span></li>
-        </ul>
-        <div>
+        <a class="main-header__logo">
+          <img src="https://via.placeholder.com/150x100" alt="Логотип сайта Глейси">
+        </a>
+        <nav class="main-navigation">
+          <ul class="main-navigation__list">
+            <li class="main-navigation__item"><a class="main-navigation__link" href="catalog.html" >Каталог</a></li>
+            <li class="main-navigation__item"><a class="main-navigation__link" href="" >Доставка и оплата</a></li>
+            <li class="main-navigation__item"><a class="main-navigation__link" href="" >О компании</a></li>
+          </ul>
+        </nav> 
+          <ul class="user-navigation">
+            <li class="user-navigation__item"><a class="user-navigation__link"></a></li>
+            <li class="user-navigation__item"><a class="user-navigation__link" href="" >Вход</a></li>
+            <li class="user-navigation__item"><a class="user-navigation__link" href="" >Корзина</a></li>
+          </ul>
+        <div class="work-info">
             <p>с 10 до 20, ежедневно</p>
-            <p>8 812 450-25-25</p>
+            <a href="tel:...">8 812 450-25-25</a>
         </div>
     </header>
     <main class="main-container">
-    <div>
-        <ul>
-            <li>
-                <a href="index.html">Главная</a>
+    <div class="small-navigation">
+        <ul class="small-navigation__list">
+            <li class="small-navigation__item">
+                <a class="small-navigation__link" href="index.html">Главная</a>
             </li>
-            <li>
-                <a href="catalog.html">Каталог</a>
-            </li>
-            <li>
-                Сливочное
-            </li>
+            <li class="small-navigation__item">
+                <a class="small-navigation__link" href="catalog.html">Каталог</a>
+            </li >
+            <li class="small-navigation__item">Сливочное</li>
         </ul>
     </div>
-    <section>
-        <ul>
-            <li>
-                <span>
+    <section class="catalog">
+        <!-- Потом спрятать -->
+        <h1>Каталог мороженого Магазина Глэйси</h1>
+        <ul class="catalog-list">
+            <li class="catalog-item">
+                <div class="catalog-item__image">
                     <img src="https://via.placeholder.com/267x267" width="267" height="267" alt="Сливочное с брусничным джемом">
-                    <span>310 ₽/кг</span>
-                </span>
-                <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+                    <span class="catalog-item__value">310 ₽/кг</span>
+                </div>
+                <h2>Сливочное с апельсиновым джемом и цитрусовой стружкой</h2>
             </li>
-            <li>
-                <span>
+            <li class="catalog-item">
+                <div class="catalog-item__image">
                     <img src="https://via.placeholder.com/267x267" width="267" height="267" alt="Сливочное с брусничным джемом">
-                    <span>380 ₽/кг</span>
-                </span>
-                <p>Сливочно-кофейное с кусочками шоколада</p>
+                    <span class="catalog-item__value">380 ₽/кг</span>
+                </div>
+                <h2>Сливочно-кофейное с кусочками шоколада</h2>
             </li>
-            <li>
-                <span>
+            <li class="catalog-item">
+                <div class="catalog-item__image">
                     <img src="https://via.placeholder.com/267x267" width="267" height="267" alt="Сливочное с брусничным джемом">
-                    <span>355 ₽/кг</span>
-                </span>
-                <p>Сливочно-клубничное с присыпкой из белого шоколада</p>
+                    <span class="catalog-item__value">355 ₽/кг</span>
+                </div>
+                <h2>Сливочно-клубничное с присыпкой из белого шоколада</h2>
             </li>
-            <li>
-                <span>
+            <li class="catalog-item">
+                <div class="catalog-item__image">
                     <img src="https://via.placeholder.com/267x267" width="267" height="267" alt="Сливочное с брусничным джемом">
-                    <span>415 ₽/кг</span>
-                </span>
-                <p>Сливочное крем-брюле <br>с карамельной подливкой</p>
+                    <span class="catalog-item__value">415 ₽/кг</span>
+                </div>
+                <h2>Сливочное крем-брюле <br>с карамельной подливкой</h2>
             </li>
-            <li>
-                <span>
+            <li class="catalog-item">
+                <div class="catalog-item__image">
                     <img src="https://via.placeholder.com/267x267" width="267" height="267" alt="Сливочное с брусничным джемом">
-                    <span>410 ₽/кг</span>
-                </span>
-                <p>Сливочно-черничное с цельными ягодами черники </p>
+                    <span class="catalog-item__value">410 ₽/кг</span>
+                </div>
+                <h2>Сливочно-черничное с цельными ягодами черники </h2>
             </li>
-            <li>
-                <span>
+            <li class="catalog-item">
+                <div class="catalog-item__image">
                     <img src="https://via.placeholder.com/267x267" width="267" height="267" alt="Сливочное с брусничным джемом">
-                    <span>325 ₽/кг</span>
-                </span>
-                <p>Сливочное с брусничным джемом</p>
+                    <span class="catalog-item__value">325 ₽/кг</span>
+                </div>
+                <h2>Сливочное с брусничным джемом</h2>
             </li>
-            <li>
-                <span>
+            <li class="catalog-item">
+                <div class="catalog-item__image">
                     <img src="https://via.placeholder.com/267x267" width="267" height="267" alt="Сливочное с брусничным джемом">
-                    <span>315 ₽/кг</span>
-                </span>
-                <p>Сливочно-лимонное с карамельной присыпкой</p>
+                    <span class="catalog-item__value">315 ₽/кг</span>
+                </div>
+                <h2>Сливочно-лимонное с карамельной присыпкой</h2>
             </li>
-            <li>
-                <span>
+            <li class="catalog-item">
+                <div class="catalog-item__image">
                     <img src="https://via.placeholder.com/267x267" width="267" height="267" alt="Сливочное с брусничным джемом">
-                    <span>320 ₽/кг</span>
-                </span>
-                <p>Сливочное с шоколадной стружкой</p>
+                    <span class="catalog-item__value">320 ₽/кг</span>
+                </div>
+                <h2>Сливочное с шоколадной стружкой</h2>
             </li>
-            <li>
-                <span>
+            <li class="catalog-item">
+                <div class="catalog-item__image">
                     <img src="https://via.placeholder.com/267x267" width="267" height="267" alt="Сливочное с брусничным джемом">
-                    <span>440 ₽/кг</span>
-                </span>
-                <p>Сливочно-ванильное с кусочками шоколада</p>
+                    <span class="catalog-item__value">440 ₽/кг</span>
+                </div>
+                <h2>Сливочно-ванильное с кусочками шоколада</h2>
             </li>
-            <li>
-                <span>
+            <li class="catalog-item">
+                <div class="catalog-item__image">
                     <img src="https://via.placeholder.com/267x267" width="267" height="267" alt="Сливочное с брусничным джемом">
-                    <span>435 ₽/кг</span>
-                </span>
-                <p>Сливочноe с ментоловым сиропом</p>
+                    <span class="catalog-item__value">435 ₽/кг</span>
+                </div>
+                <h2>Сливочноe с ментоловым сиропом</h2>
             </li>
-            <li>
-                <span>
+            <li class="catalog-item">
+                <div class="catalog-item__image">
                     <img src="https://via.placeholder.com/267x267" width="267" height="267" alt="Сливочное с брусничным джемом">
-                    <span>355 ₽/кг</span>
-                </span>
-                <p>Сливочное с кусочками черного шоколада</p>
+                    <span class="catalog-item__value">355 ₽/кг</span>
+                </div>
+                <h2>Сливочное с кусочками черного шоколада</h2>
             </li>
-            <li>
-                <span>
+            <li class="catalog-item">
+                <div class="catalog-item__image">
                     <img src="https://via.placeholder.com/267x267" width="267" height="267" alt="Сливочное с брусничным джемом">
-                    <span>420 ₽/кг</span>
-                </span>
-                <p>Сливочное с мятным сиропом</p>
+                    <span class="catalog-item__value">420 ₽/кг</span>
+                </div>
+                <h2>Сливочное с мятным сиропом</h2>
             </li>
         </ul>
     </section>  
     </main>
     <footer class="main-footer">
-      <div class="footer-container">
-        <div class="footer-social">
-          <ul>
-            <li>
-              <a class="social-button" href="#">
+        <ul class="main-footer__social-list">
+        <li class="main-footer__social-item">
+            <a class="main-footer__social-link" href="#">
                 <img src="" alt="" >
-              </a>
-            </li>
-            <li>
-              <a class="social-button" href="#">
+            </a>
+        </li>
+        <li class="main-footer__social-item">
+            <a class="main-footer__social-link" href="#">
                 <img src="" alt="" >
-              </a>
-            </li>  
-            <li>
-              <a class="social-button" href="#">
+            </a>
+        </li>  
+        <li class="main-footer__social-item">
+            <a class="main-footer__social-link" href="#">
                 <img src="" alt="" >
-              </a>
-            </li>
-            <li>
-              <a class="social-button" href="#">
+            </a>
+        </li>
+        <li class="main-footer__social-item">
+            <a class="main-footer__social-link" href="#">
                 <img src="" alt="" >
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div>
-            <ul>
-                <li>
-                    <a href="" >
+            </a>
+        </li>
+        </ul>
+        <ul class="main-footer__navigatioin-list">
+            <li class="main-footer__navigatioin-item">
+                <a class="main-footer__navigatioin-link" href="" >
                     <img src="" alt="" >
-                    <strong>Для поставщиков</strong>
-                    </a>
-                </li>
-                <li>
-                    <a href="" >О производстве</a>
-                </li>
-                <li>
-                    <a href="" >Наши документы</a>
-                </li>
-                <li>
-                    <a href="" >Экологические стандарты</a>
-                </li>
-            </ul>
-        </div>
-        <div>
-          <ul>
-            <li>
-              <a class="footer-logo" href="#">
-                <img src="" alt="" >
-              </a>
+                    Для поставщиков
+                </a>
             </li>
-            <li>
-              <p>Сделано в HTML Academy © 2019</p>
+            <li class="main-footer__navigatioin-item">
+                <a class="footer-navigatioin_link" href="" >О производстве</a>
+            </li>
+            <li class="main-footer__navigatioin-item">
+                <a class="main-footer__navigatioin-link" href="" >Наши документы</a>
+            </li>
+            <li class="main-footer__navigatioin-item">
+                <a class="main-footer__navigatioin-link" href="" >Экологические стандарты</a>
+            </li>
+        </ul>
+        <ul class="main-footer__copyright-list">
+            <li class="main-footer__copyright-item">
+                <a class="main-footer__copyright-link" href="#">
+                    <img src="" alt="" >
+                </a>
+            </li>
+            <li class="main-footer__copyright-item">
+                <p>Сделано в <a href="">HTML Academy</a> © 2019</p>
             </li>  
-          </ul>
-        </div>
-      </div>
+        </ul>
     </footer>
   </body>
 </html>

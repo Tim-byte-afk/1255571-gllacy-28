@@ -6,114 +6,104 @@
   </head>
   <body>
     <header class="main-header">
-      <a class="main-header_logo">
+      <a class="main-header__logo">
         <img src="https://via.placeholder.com/150x100" alt="Логотип сайта Глейси">
       </a>
-      <nav class="main-header_navigation">
-        <ul class="main-header-site_navigation">
-          <li><a href="catalog.html" >Каталог</a></li>
-          <li><a href="" >Доставка и оплата</a></li>
-          <li><a href="" >О компании</a></li>
+      <nav class="main-navigation">
+        <ul class="main-navigation__list">
+          <li class="main-navigation__item"><a class="main-navigation__link" href="catalog.html" >Каталог</a></li>
+          <li class="main-navigation__item"><a class="main-navigation__link" href="" >Доставка и оплата</a></li>
+          <li class="main-navigation__item"><a class="main-navigation__link" href="" >О компании</a></li>
         </ul>
       </nav> 
-        <ul class="main-header-user_navigation">
-          <li><span></span></li>
-          <li><span>Вход</span></li>
-          <li><span>Корзина</span></li>
+        <ul class="user-navigation">
+          <li class="user-navigation__item"><a class="user-navigation__link"></a></li>
+          <li class="user-navigation__item"><a class="user-navigation__link" href="" >Вход</a></li>
+          <li class="user-navigation__item"><a class="user-navigation__link" href="" >Корзина</a></li>
         </ul>
     </header>
     <main class="main-container">
-      <section>
-        <p>Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес</p>
-        <ul>
-          <li>
-            <span></span>>
+      <section class="about_shop">
+        <h1>Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес</h1>
+        <ul class="about_shop__list">
+          <li class="about_shop__item">
             <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
           </li>
-          <li>
-            <span></span>>
+          <li class="about_shop__item">
             <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
           </li>
-          <li>
-            <span></span>>
+          <li class="about_shop__item">
             <p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
           </li>
-          <li>
-            <span></span>>
+          <li class="about_shop__item">
             <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
           </li>
         </ul>
       </section>
       <div>
-        <article>
+        <article class="novelty">
           <p>Новое в нашем блоге</p>
-          <h3>10 способов сервировки фруктовых щербетов <br> к столу</h3>
+          <h2><a href="">10 способов сервировки фруктовых щербетов <br> к столу</a></h2>
         </article>
-        <div>
+        <div class="subscription">
           <p>Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-          <input type="email" >
-          <button>Отправить</button>
+          <input class="subscription__input" type="email" >
+          <button class="subscription__button">Отправить</button>
         </div>
       </div>
     </main>
     <footer class="main-footer">
-      <div class="footer-container">
-        <div class="footer-social">
-          <ul>
-            <li>
-              <a class="social-button" href="#">
-                <img src="" alt="" >
-              </a>
-            </li>
-            <li>
-              <a class="social-button" href="#">
-                <img src="" alt="" >
-              </a>
-            </li>  
-            <li>
-              <a class="social-button" href="#">
-                <img src="" alt="" >
-              </a>
-            </li>
-            <li>
-              <a class="social-button" href="#">
-                <img src="" alt="" >
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <ul>
-              <li>
-                  <a href="" >
+      <ul class="main-footer__social-list">
+      <li class="main-footer__social-item">
+          <a class="main-footer__social-link" href="#">
+              <img src="" alt="" >
+          </a>
+      </li>
+      <li class="main-footer__social-item">
+          <a class="main-footer__social-link" href="#">
+              <img src="" alt="" >
+          </a>
+      </li>  
+      <li class="main-footer__social-item">
+          <a class="main-footer__social-link" href="#">
+              <img src="" alt="" >
+          </a>
+      </li>
+      <li class="main-footer__social-item">
+          <a class="main-footer__social-link" href="#">
+              <img src="" alt="" >
+          </a>
+      </li>
+      </ul>
+      <ul class="main-footer__navigatioin-list">
+          <li class="main-footer__navigatioin-item">
+              <a class="main-footer__navigatioin-link" href="" >
                   <img src="" alt="" >
-                  <strong>Для поставщиков</strong>
-                  </a>
-              </li>
-              <li>
-                  <a href="" >О производстве</a>
-              </li>
-              <li>
-                  <a href="" >Наши документы</a>
-              </li>
-              <li>
-                  <a href="" >Экологические стандарты</a>
-              </li>
-          </ul>
-      </div>
-        <div>
-          <ul>
-            <li>
-              <a class="footer-logo" href="#">
-                <img src="" alt="" >
+                  Для поставщиков
               </a>
-            </li>
-            <li>
-              <p>Сделано в HTML Academy © 2019</p>
-            </li>  
-          </ul>
-        </div>
-      </div>
-    </footer>
+          </li>
+          <li class="main-footer__navigatioin-item">
+              <a class="footer-navigatioin_link" href="" >О производстве</a>
+          </li>
+          <li class="main-footer__navigatioin-item">
+              <a class="main-footer__navigatioin-link" href="" >Наши документы</a>
+          </li>
+          <li class="main-footer__navigatioin-item">
+              <a class="main-footer__navigatioin-link" href="" >Экологические стандарты</a>
+          </li>
+      </ul>
+      <ul class="main-footer__copyright-list">
+          <li class="main-footer__copyright-item">
+              <a class="main-footer__copyright-link" href="#">
+                  <img src="" alt="" >
+              </a>
+          </li>
+          <li class="main-footer__copyright-item">
+              <p>Сделано в <a href="">HTML Academy</a> © 2019</p>
+          </li>  
+      </ul>
+  </footer>
+</body>
+</html>
   </body>
 </html>
