@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=latin,cyrillic">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -17,21 +20,28 @@
           </ul>
         </nav> 
           <ul class="user-navigation">
-            <li class="user-navigation__item"><a class="user-navigation__link"></a></li>
+            <li class="user-navigation__item">
+                <a class="user-navigation__link"></a>
+                <form action="https://echo.htmlacademy.ru" method="post">
+                    <input class="visually-hidden" type="text" name="search" placeholder="Крем-брюле"/>
+                </form>
+            </li>
             <li class="user-navigation__item"><a class="user-navigation__link" href="" >Вход</a></li>
             <li class="user-navigation__item">
-                <a class="user-navigation__link" href="" >Корзина</a>
+                <form action="https://echo.htmlacademy.ru" method="post">
+                    <a class="user-navigation__link" href="" >Корзина</a>
+                </form>
                 <ul class="visually-hidden">
                     <li>
-                        <button type="submit"></button>
-                        <img src="/img/ice-cream-mini-1.jpg.jp"/>
+                        <button type="button"></button>
+                        <img src="/img/ice-cream-mini-1.jpg"/>
                         <p>Пломбир с апельсиновым джемом</p>
                         <p>1,5 кг х <span>200 руб.</span></p>
                         <p>300 руб.</p>
                     </li>
                     <li>
-                        <button type="submit"></button>
-                        <img src="/img/ice-cream-mini-2.jpg.jp"/>
+                        <button type="button"></button>
+                        <img src="/img/ice-cream-mini-2.jpg"/>
                         <p>Клубничный пломбир с присыпкой из белого шоколада</p>
                         <p>1,5 кг х <span>300 руб.</span></p>
                         <p>450 руб.</p>
@@ -39,9 +49,7 @@
                     <li>
                         <p>Итого: 750 руб.</p>
                     </li>
-                    <li>
-                        <button type="submit">Оформить заказ</button>
-                    </li>
+                    <button type="button">Оформить заказ</button>
                 </ul>
             </li>
           </ul>
@@ -110,7 +118,7 @@
                 <input class="" type="checkbox" > джемы
             </label>
         </div>
-        <button class="" type=submit >Применить</button>
+        <button class="" type="submit" >Применить</button>
       </section>
     <section class="catalog">
         <ul class="catalog-list">
