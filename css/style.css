@@ -9,6 +9,8 @@
 
     --basic-neutral-green: #849D8F;
     --basic-red-gold: #FFBC9E;
+    --special-one: #FBDED7;
+    --special-second: #F6B5A5;
     --special: #663d15;
 }
 
@@ -151,6 +153,39 @@ a:hover.user-navigation__link {
 
 .work-info a:active {
     color: var(--basic-red-gold)
+}
+
+.navigation-form {
+    width: 143px;
+    height: 171px;
+    align-items: center;
+    color: var(--basic-extra-dark);
+    background-color: var(--basic-white);
+    list-style: none;
+}
+
+.navigation-form__item p {
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.navigation-form__item a {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: normal;
+}
+
+.navigation-form__item a:hover {
+    background-color: var(--special-one);
+}
+
+.navigation-form__item a:active {
+    background-color: var(--special-second);
+}
+
+.find-form {
+    width: 277px;
+    height: 214px;
 }
 
 /* Подвал */
