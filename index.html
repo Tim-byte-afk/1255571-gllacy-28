@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
@@ -7,7 +7,7 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="page-body">
     <header class="main-header">
       <div class="main-header__line">
         <a class="main-header__logo">
@@ -40,14 +40,14 @@
           </ul>
         </nav> 
         <ul class="user-navigation">
-          <li class="user-navigation__item">
-            <a class="user-navigation__link test"></a>
-            <form action="https://echo.htmlacademy.ru" method="post">
-              <input class="visually-hidden" type="text" name="search" placeholder="Крем-брюле"/>
+          <li class="user-navigation__item user-navigation__search-link">
+            <a class="user-navigation__link" href=""></a>
+            <form class="visually-hidden" action="https://echo.htmlacademy.ru" method="post">
+              <input type="text" name="search" placeholder="Крем-брюле"/>
             </form>
           </li>
           <li class="user-navigation__item">
-            <a class="user-navigation__link" href="">Вход</a>
+            <a class="user-navigation__link user-navigation__in" href="">Вход</a>
             <section class="visually-hidden">
               <form action="https://echo.htmlacademy.ru" method="post">
                 <input type="email" name="login" placeholder="email@example.com">
@@ -58,7 +58,9 @@
               </form>
             </section>
           </li>
-          <li class="user-navigation__item"><a class="user-navigation__link" href="">Пусто</a></li>
+          <li class="user-navigation__item ">
+            <a class="user-navigation__link user-navigation__basket" href="">Пусто</a>
+          </li>
         </ul>
       </div>
       <div class="work-info">
@@ -78,7 +80,7 @@
           <a class="main-slider__button" href="#">Давайте оба!</a>
 
         </div>
-        <div class="">
+        <div class="slider-one">
           <h2>Крем-брюле и пломбир <br>с малиновым джемом</h2>
           <a class="main-slider__button" href="#">Давайте оба!</a>
 
@@ -138,37 +140,39 @@
                 <h2 class="catalog-item__topic"><a href="">Сливочное крем-брюле <br>с карамельной подливкой</a></h2>
             </li>
         </ul>
-        </section>
+      </section>
       <section class="about-shop">
-        <h1>Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес</h1>
+        <h1>Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного <br>производства на развес</h1>
         <ul class="about-shop__list">
           <li class="about-shop__item">
-            <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+            <p>Все наше мороженое изготавливается на собственном <br>производстве, с использованием современного оборудования <br>и проверенных временем технологий.</p>
           </li>
           <li class="about-shop__item">
-            <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+            <p>Закупка ингредиентов производится только у проверенных <br>фермерских хозяйств и компаний, с которыми нас связывает <br>долговременное сотрудничество.</p>
           </li>
           <li class="about-shop__item">
-            <p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+            <p>Для приготовления мороженого используются настоящие <br>сливки и молоко высочайшего качества. Все дополнительные <br>ингредиенты и добавки произведены из натурального, <br>экологически чистого сырья.</p>
           </li>
           <li class="about-shop__item">
-            <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+            <p>Доставка нашего мороженого до заказчиков осуществляется <br>в специальном термопаке, который не дает мороженому <br>растаять в пути и позволяет сохранить превосходный вкус.</p>
           </li>
         </ul>
       </section>
       <div class="information">
         <article class="novelty information__item">
           <p class="novelty__title">Новое в нашем блоге</p>
-          <h2  class="novelty__topic"><a href="">10 способов сервировки фруктовых щербетов <br> к столу</a></h2>
+          <h2  class="novelty__topic"><a href="">10 способов сервировки<br> фруктовых щербетов <br> к столу</a></h2>
         </article>
         <div class="subscription information__item">
-          <p>Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-          <input class="subscription__input" type="email" >
-          <button class="subscription__button">Отправить</button>
+          <div class="subscription__container">
+            <p>Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+            <input class="subscription__input" type="email" placeholder="email@example.com" >
+            <button class="subscription__button">Отправить</button>
+          </div>
         </div>
       </div>
-      <div>
-        <span></span>
+      <div class="map-main">
+        <span class=""></span>
       </div>
     </main>
     <footer class="main-footer">
