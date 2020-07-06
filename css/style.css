@@ -357,10 +357,6 @@ a.user-navigation__link {
     background-color: var(--special-second);
 }
 
-.find-form {
-    /* width: 277px;
-    height: 214px; */
-}
 
 /* Карта */
 
@@ -380,7 +376,6 @@ a.user-navigation__link {
 
 .main-footer {
     width: 100%;
-    /* height: 103px; */
 }
 
 .social-list {
@@ -512,12 +507,37 @@ a.user-navigation__link {
 
 /* Слайдер */
 
+.page-body {
+    background-image: url("../img/slider-1.png");
+    background-repeat: no-repeat;
+    background-position: 48% 21%;
+}
+
+.page-body:before,
+.page-body:after {
+  content: "";
+  visibility: hidden;
+}
+
+.page-body:before {
+  background-image: url("../img/slider-2.png");
+}
+
+.page-body:after {
+  background-image: url("../img/slider-3.png");
+}
+
 .main-slider__slide {
-    display: none;
+    position: relative;
+    text-align: center;
+    color: #ffffff;
+    outline: 5px solid rgba(255, 0, 0, 0.3);
+    outline-offset: -5px;
 }
 
 .main-slider__slide h2 {
     margin: 0 auto;
+    margin-top: 275px;
     margin-bottom: 30px;
     width: 700px;
     text-align: center;
@@ -525,10 +545,6 @@ a.user-navigation__link {
     line-height: 60px;
 }
 
-/* .main-slider h2 {
-    font-size: 60px;
-    line-height: 60px;
-} */
 
 .main-slider a {
     font-size: 32px;
@@ -544,8 +560,50 @@ a.user-navigation__link {
 }
 
 .main-slider__list {
-    list-style: none;
+    position: relative;
+    left: 0px;
+    bottom: 25px;
+    font-size: 0;
 }
+
+.main-slider__list label {
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    margin-right: 8px;
+    vertical-align: top;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.main-slider__list label:hover {
+    background-color: #b2c1b7;
+}
+
+#main-slider__label-1:checked ~ .page-body {
+    background-color: #849d8f;
+    background-image: url("../img/slider-1.png");
+}
+
+#main-slider__label-2:checked ~ .page-body {
+    background-color: #8996a6;
+    background-image: url("../img/slider-2.png");
+}
+
+#main-slider__label-3:checked ~ .page-body {
+    background-color: #9d8b84;
+    background-image: url("../img/slider-3.png");
+}
+  
+#main-slider__label--1:checked ~ .page-body label[for="main-slider__labe-1"],
+#main-slider__label--2:checked ~ .page-body label[for="main-slider__labe-2"],
+#main-slider__label--3:checked ~ .page-body label[for="main-slider__labe-3"] {
+    background-color: #ffffff;
+}
+
+
 
 .main-slider__item {
     display: inline;
@@ -575,15 +633,11 @@ a.main-slider__button {
     border-radius: 50px;
 }
 
-.slider-one {
-    background: url("../img/slider-1.png") no-repeat;
-}
-
 /* Блок топпингов */
 
 .toppings {
     padding-left: 0px;
-    margin-top: 522px;
+    margin-top: 35px;
     display: grid;
     column-gap: 26px;
     grid-template-columns: 267px 267px 267px 267px;
@@ -683,6 +737,18 @@ a:active.toppings__link {
     text-align: center;
 }
 
+.catalog-item__image::before {
+    display: none;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 61px;
+    width: 61px;
+    background-image: url("../img/hit.png");
+    z-index: 20;
+}
+
 .catalog-item__value {
     font-size: 45px;
     line-height: 45px;
@@ -709,34 +775,17 @@ a:active.toppings__link {
     text-decoration-color: rgba(var(--border-color-rgb), 0.2);
 }
 
-
-li:hover.catalog-list__item {
-    background: #FFFFFF;
-    opacity: 0.2;
-    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
- 
-    background: var(--basic-white) url("../img/hit.svg") no-repeat 0 0;
-    z-index: 10;
-}
-
 .catalog-item__image img {
     border-radius: 267px;
 }
 
-.catalog-item__hit {
-    /* display: block; */
-    /* content: ""; */
-    /* position: absolute; */
-    /* /* top: 0; */
-    /* left: 0; */
-    /* height: 61px;
-    width: 61px; 
-    background:  url("../img/hit.svg") no-repeat 0 0;
-    z-index: 10; */
+.catalog-item:hover {
+    background: #FFFFFF;
+    opacity: 0.2;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    height: 402px;
 }
-
-
 
 span.catalog-item__value {
     position: relative; 
