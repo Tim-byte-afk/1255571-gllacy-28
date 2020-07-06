@@ -103,8 +103,6 @@ img {
     height: 64px;
     float: left;
     margin-right: 11px;
-    outline: 5px solid rgba(255, 0, 0, 0.3);
-    outline-offset: -5px;
 }
 
 /* Навигация */
@@ -114,8 +112,6 @@ img {
     line-height: 20px;
     color: var(--basic-white);
     background-color: transparent;
-    outline: 5px solid rgba(255, 0, 0, 0.3);
-    outline-offset: -5px;
 }
 
 .main-navigation__list {
@@ -148,13 +144,6 @@ a:link.main-navigation__link {
     text-decoration-color: rgba(var(--border-color-rgb), 0.2);
     display: block;
 }
-
-/* a::after.main-navigation__link {
-    content: "";
-    display: block;
-    height: 1px;
-    background-color: rgba(255, 255, 255, 0.2);
-} */
 
 a:visited.main-navigation__link {
     color: var(--basic-white);
@@ -197,9 +186,6 @@ a:hover.main-navigation__link--active {
     margin-top: 14px;
     padding: 0px;
     list-style: none;
-    outline: 5px solid rgba(0, 255, 255, 0.3);
-    outline-offset: -5px;
-
 }
 
 .user-navigation__item {
@@ -214,69 +200,75 @@ a.user-navigation__link {
     font-size: 14px;
     line-height: 16px;
     font-weight: 500;
-    /* border-radius: 15px; */
-    /* background-color: rgba(255, 255, 255, 0.2); */
     text-decoration: none;
 }
 
-
-
-/* a:link.user-navigation__link {
+.user-navigation__item a {
     color: var(--basic-white);
+    background: rgba(255, 255, 255, 0.2);
 }
 
-a:visited.user-navigation__link {
-    color: var(--basic-white);
-}
-
-a:hover.user-navigation__link {
-    color: var(--basic-extra-dark);
-    background-color: var(--basic-white);
-} */
-
-/* .user-navigation__search-link {
-    
-} */
-
-.user-navigation__search-link::before {
-    width: 17px;
+.user-navigation__search-link {
+    width: 17px; 
     height: 16px;
     padding: 8px;
     border-radius: 50%;
-    content: "";
+    content: ""; 
     position: absolute;
     left: -25px;
-    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.user-navigation__search-link::before {
+    padding: 8px;
+    content: "";
+    position: absolute;
     background-image: url("../img/loupe.svg");
     background-position: 50% 50%;
     background-repeat: no-repeat;
-  }
+}
+
+.user-navigation__search-link:hover:before {
+    padding: 8px;
+    content: "";
+    position: absolute;
+    background-image: url("../img/loupe-black.svg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
 
 .user-navigation__login {
     position: relative;
     padding: 8px 16px 8px 44px;
     border-radius: 20px;
-    background-color: rgba(255, 255, 255, 0.2);
     vertical-align: top;
 }
 
 .user-navigation__login::before {
     content: "";
     position: absolute;
+    top: 7px;
     left: 15px;
     width: 21px;
-    height: 20px;
-    background-image: url("../img/entrance.svg");
-    background-position: -193px -64px;
-  }
+    height: 19px;
+    color: var(--basic-white);
+    background: url("../img/entrance.svg") no-repeat;
+}
+
+.user-navigation__login:hover::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 15px;
+    width: 21px;
+    height: 19px;
+    color: var(--basic-white);
+    background: url("../img/entrance-black.svg") no-repeat;
+}
 
 .user-navigation__basket {
     position: relative;
     padding: 8px 16px 8px 45px;
     border-radius: 20px;
-    background-color: rgba(255, 255, 255, 0.2);
-    /* padding-left: 43px;
-    padding-right: 35px; */
     vertical-align: top;
 }
 
@@ -287,18 +279,17 @@ a:hover.user-navigation__link {
     left: 15px;
     width: 21px;
     height: 19px;
-    background: url("../img/pin.svg") no-repeat;
-    background-position: -5px -5px;
-  }
+    background: url("../img/basket.svg") no-repeat;
+}
 
-.user-navigation__search-link:link,
-.user-navigation__search-link:visited,
-.user-navigation__login:link,
-.user-navigation__login:visited,
-.user-navigation__basket:link,
-.user-navigation__basket:visited {
-    color: var(--basic-white);
-    background-color: rgba(255, 255, 255, 0.2);
+.user-navigation__basket:hover::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 15px;
+    width: 21px;
+    height: 19px;
+    background: url("../img/basket-red.svg") no-repeat;
 }
 
 .user-navigation__search-link:hover,
@@ -306,11 +297,9 @@ a:hover.user-navigation__link {
 .user-navigation__basket:hover {
     color: var(--basic-extra-dark);
     background-color: var(--basic-white);
-} 
+}
 
 .work-info {
-    outline: 5px solid rgba(255, 0, 0, 0.3);
-    outline-offset: -5px;
     margin-top: 68px;
     text-align: right;
 }
@@ -377,7 +366,8 @@ a:hover.user-navigation__link {
 
 .map-main {
     position: relative;
-    margin: -27px auto;
+    margin-left: -27px;
+    margin-right: -27px;
     min-width: 900px;
     max-width: 1200px;
     min-height: 430px;
