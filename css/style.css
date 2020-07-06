@@ -773,12 +773,13 @@ h2.catalog-item__topic {
 /* Вафля блок */
 
 .about-shop {
-    padding-left: 0px;
+    padding: 0px;
+    margin-top: 0px;
     margin-bottom: 40px;
     display: grid;
     column-gap: 26px;
     grid-template-columns: 267px 267px 267px 267px;
-    grid-template-rows: 84px 76px 146px;
+    grid-template-rows: 84px 111px 111px;
     background: url("../img/pattern.png") repeat;
     color: var(--basic-extra-dark);
     border-radius: 16px;
@@ -793,9 +794,12 @@ h2.catalog-item__topic {
     line-height: 30px;
     font-weight: 500;
     padding-left: 20px;
+    margin-top: 25px;
 }
 
 .about-shop__item p {
+    margin-top: 10px;
+    padding-top: 0px;
     line-height: 22px;
     font-weight: normal;
 }
@@ -809,31 +813,36 @@ h2.catalog-item__topic {
 }
 
 li.about-shop__item:nth-child(1) {
+    margin-top: -10px;
+    padding-top: 0px;
     padding-left: 75px;
     grid-column: 1/3;
     grid-row: 2/3;
-    background: url("../img/ice-cream.svg") no-repeat 20px 0%;
+    background: url("../img/ice-cream.svg") no-repeat 20px 0px;
 }
 
 li.about-shop__item:nth-child(2) {
+    margin-top: -10px;
     padding-left: 55px;
     grid-column: 3/5;
     grid-row: 2/3;
-    background: url("../img/cow.svg") no-repeat 0% 0%;
+    background: url("../img/cow.svg") no-repeat 0% 0px;
 }
 
 li.about-shop__item:nth-child(3) {
+    margin-top: -10px;
     padding-left: 75px;
     grid-column: 1/3;
     grid-row: 3/4;
-    background: url("../img/eco.svg") no-repeat 20px 0%;
+    background: url("../img/eco.svg") no-repeat 20px 0px;
 }
 
 li.about-shop__item:nth-child(4) {
+    margin-top: -10px;
     padding-left: 55px;
     grid-column: 3/5;
     grid-row: 3/4;
-    background: url("../img/thermometer.svg") no-repeat 0% 0%;
+    background: url("../img/thermometer.svg") no-repeat 0% 0px;
 }
 
 /* Новое и подписка */
@@ -858,58 +867,75 @@ li.about-shop__item:nth-child(4) {
     grid-column: 1/3;
     background-image: url("../img/strawberry_background.jpg");
     color: var(--basic-extra-dark);
+    float: left;
 }
 
-.novelty__title p {
-    line-height: 22px;
+p.novelty__title {
+    margin-left: 20px;
+    margin-top: 22px;
+    margin-bottom: 0px;
+    font-family: Roboto;
+    font-style: normal;
     font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
 }
 
-.novelty__title h2 {
+h2.novelty__topic {
+    margin-top: 0px;
+    margin-left: 20px;
+    display: block;
     font-size: 24px;
     line-height: 30px;
+    font-weight: 700;
+    color: #323232;
+    text-decoration: underline;
 }
 
 .novelty__topic a:link,
 .novelty__topic a:visited {
     color: var(--basic-extra-dark);
     text-decoration: underline;
-    text-decoration-color: rgba(var(--border-color-rgb), 0.2);
 }
 
 
 .subscription {
     grid-column: 3/5;
-    background-image: url("../img/bg-post.svg");
+    background: var(--basic-white-post) url("../img/bg-post.svg");
     border-radius: 16px;
-    padding: 0px;
-    margin: 0px;
+    padding: 5px 6px 5px 6px;
 }
 
 .subscription__container {
-    /* width: 100%; */
-    height: 90%;
-    margin: 5px 6px 5px 6px;
-    background: var(--basic-white-post);
+    float: right;
+    box-sizing: border-box;
+    min-height: 210px;
     border-radius: 16px;
+    background-color: var(--basic-white-post);
 }
 
-.subscription p {
+.subscription__container p {
+    margin: 0;
+    padding: 26px 20px 0 20px;
+    min-height: 100px;
     font-weight: normal;
     line-height: 22px;
     color: var(--basic-grey);
 }
 
 .subscription__input {
+    margin-left: 20px;
     width: 368px;
     height: 44px;
     background: #FFFFFF;
     border: 1px solid rgba(178, 178, 178, 0.52);
     box-sizing: border-box;
     border-radius: 6px;
+    text-indent: 14px;
 }
 
 .subscription__button {
+    margin-left: 10px;
     padding: 14px 19px 13px 19px;
     font-size: 18px;
     line-height: 24px;
