@@ -46,8 +46,8 @@
               <input type="text" name="search" placeholder="Крем-брюле"/>
             </form>
           </li>
-          <li class="user-navigation__item">
-            <a class="user-navigation__link user-navigation__in" href="">Вход</a>
+          <li class="user-navigation__item user-navigation__login">
+            <a class="user-navigation__link" href="">Вход</a>
             <section class="visually-hidden">
               <form action="https://echo.htmlacademy.ru" method="post">
                 <input type="email" name="login" placeholder="email@example.com">
@@ -58,8 +58,8 @@
               </form>
             </section>
           </li>
-          <li class="user-navigation__item ">
-            <a class="user-navigation__link user-navigation__basket" href="">Пусто</a>
+          <li class="user-navigation__item user-navigation__basket">
+            <a class="user-navigation__link" href="">Пусто</a>
           </li>
         </ul>
       </div>
@@ -70,32 +70,26 @@
     </header>
     <main class="main-container">
       <div class="main-slider">
-        <div class="visually-hidden">
+        <div class="main-slider__slide visually-hidden">
           <h2>Пломбир с помадкой и клубничный щербет</h2>
           <a class="main-slider__button" href="#">Давайте оба!</a>
 
         </div>
-        <div class="visually-hidden">
+        <div class="main-slider__slide visually-hidden">
           <h2>Шоколадный пломбир и лимонный сорбет</h2>
           <a class="main-slider__button" href="#">Давайте оба!</a>
 
         </div>
-        <div class="slider-one">
+        <div class="main-slider__slide">
           <h2>Крем-брюле и пломбир <br>с малиновым джемом</h2>
           <a class="main-slider__button" href="#">Давайте оба!</a>
 
         </div>
-        <ul class="main-slider__list">
-          <li class="main-slider__item">
-            <a class="main-slider__link" href="#"></a>
-          </li>
-          <li class="main-slider__item">
-            <a class="main-slider__link" href="#"></a>
-          </li>
-          <li class="main-slider__item">
-            <a class="main-slider__link" href="#"></a>
-          </li>
-        </ul>
+        <div class="main-slider__list">
+            <label class="main-slider__label" href="#"></label>
+            <label class="main-slider__label" href="#"></label>
+            <label class="main-slider__label" href="#"></label>
+        </div>
       </div>
       <ul class="toppings">
         <li class="toppings__item toppings-raspberry">
@@ -112,28 +106,28 @@
       <section class="catalog">
         <ul class="catalog-list">
             <li class="catalog-list__item catalog-item">
-                <div class="catalog-item__image">
+                <div class="catalog-item__image catalog-item__hit">
                     <img src="img/index_product-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
                     <span class="catalog-item__value">310 ₽<span class="catalog-item__heft">/кг</span></span>
                 </div>
                 <h2 class="catalog-item__topic"><a href="">Сливочное с апельсиновым <br>джемом и цитрусовой стружкой</a></h2>
             </li>
             <li class="catalog-list__item catalog-item">
-                <div class="catalog-item__image">
+                <div class="catalog-item__image catalog-item__hit">
                     <img src="img/index_product-2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
                     <span class="catalog-item__value">380 ₽<span class="catalog-item__heft">/кг</span></span>
                 </div>
                 <h2 class="catalog-item__topic"><a href="">Сливочно-кофейное с кусочками <br>шоколада</a></h2>
             </li>
             <li class="catalog-list__item catalog-item">
-                <div class="catalog-item__image">
+                <div class="catalog-item__image catalog-item__hit">
                     <img src="img/index_product-3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
                     <span class="catalog-item__value">355 ₽<span class="catalog-item__heft">/кг</span></span>
                 </div>
                 <h2 class="catalog-item__topic"><a href="">Сливочно-клубничное <br>с присыпкой из белого шоколада</a></h2>
             </li>
             <li class="catalog-list__item catalog-item">
-                <div class="catalog-item__image">
+                <div class="catalog-item__image catalog-item__hit">
                     <img src="img/index_product-4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
                     <span class="catalog-item__value">415 ₽<span class="catalog-item__heft">/кг</span></span>
                 </div>
@@ -198,23 +192,16 @@
               </a>
           </li>
       </ul>
-      <ul class="navigatioin-list">
-          <li class="navigatioin-list__item">
-              <a class="navigatioin-list__link navigatioin-list__special" href="blank.html" >
-                  <img src="img/heart.svg" alt="" >
-                  Для поставщиков
-              </a>
-          </li>
-          <li class="navigatioin-list__item">
-              <a class="navigatioin-list__link" href="blank.html" >О производстве</a>
-          </li>
-          <li class="navigatioin-list__item">
-              <a class="navigatioin-list__link" href="blank.html" >Наши документы</a>
-          </li>
-          <li class="navigatioin-list__item">
-              <a class="navigatioin-list__link" href="blank.html" >Экологические стандарты</a>
-          </li>
-      </ul>
+      <div class="footer-navigatioin">
+        <ul class="footer-navigatioin__item footer-navigatioin__left">
+          <li><a class="footer-navigatioin__link" href="blank.html">Для поставщиков</a></li>
+          <li><a href="blank.html">О производстве</a></li>
+        </ul>
+        <ul class="footer-navigatioin__item">
+          <li><a href="blank.html">Наши документы</a></li>
+          <li><a href="blank.html">Экологические стандарты</a></li>
+        </ul>
+      </div>
       <ul class="copyright-list">
           <li class="copyright-list__item">
               <a class="copyright-list__link" href="blank.html">
