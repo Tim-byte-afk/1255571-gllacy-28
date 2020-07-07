@@ -8,6 +8,10 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page-body">
+    <input class="visually-hidden" type="radio" id="btn-1" name="toggle" checked>
+    <input class="visually-hidden" type="radio" id="btn-2" name="toggle">
+    <input class="visually-hidden" type="radio" id="btn-3" name="toggle">
+    <div class="page-body__background">
     <header class="main-header">
       <div class="main-header__line">
         <a class="main-header__logo">
@@ -17,9 +21,9 @@
           <ul class="main-navigation__list">
             <li class="main-navigation__item">
               <a class="main-navigation__link" href="catalog.html" >Каталог</a>
-              <ul class="visually-hidden navigation-form">
+              <ul class="navigation-form">
                 <li class="navigation-form__item">
-                  <p>Новинки</p>
+                  <a class="navigation-form__link" href="">Новинки</a>
                 </li>
                 <li class="navigation-form__item">
                   <a href="">Сливочное</a>
@@ -42,9 +46,11 @@
         <ul class="user-navigation">
           <li class="user-navigation__item">
             <a class="user-navigation__link user-navigation__search-link" href=""></a>
-            <form class="visually-hidden" action="https://echo.htmlacademy.ru" method="post">
-              <input type="text" name="search" placeholder="Крем-брюле"/>
-            </form>
+            <div class="user-navigation__search-form">
+              <form action="https://echo.htmlacademy.ru" method="post">
+                <input type="text" name="search" placeholder="Крем-брюле"/>
+              </form>
+            </div>
           </li>
           <li class="user-navigation__item">
             <a class="user-navigation__link user-navigation__login" href="">Вход</a>
@@ -162,8 +168,10 @@
         <div class="subscription information__item">
           <div class="subscription__container">
             <p>Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-            <input class="subscription__input" type="email" placeholder="email@example.com" >
-            <button class="subscription__button">Отправить</button>
+            <form>
+              <input class="subscription__input" type="email" placeholder="email@example.com" >
+              <button class="subscription__button">Отправить</button>
+            </form>
           </div>
         </div>
       </div>
@@ -215,6 +223,7 @@
           </li>  
       </ul>
   </footer>
+  </div>
   <section class="visually-hidden">
     <p>Мы обязательно вам ответим!</p>
     <form action="https://echo.htmlacademy.ru" method="post">
