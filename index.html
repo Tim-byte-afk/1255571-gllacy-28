@@ -54,13 +54,16 @@
           </li>
           <li class="user-navigation__item">
             <a class="user-navigation__link user-navigation__login" href="">Вход</a>
-            <section class="visually-hidden">
+            <section class="user-navigation__login-form">
               <form action="https://echo.htmlacademy.ru" method="post">
                 <input type="email" name="login" placeholder="email@example.com">
                 <input type="password" name="password" placeholder="••••••">
+                <div class="user-navigation__login-form-links">
                 <button type="submit" >Войти</button>
-                <a href="blank.html">Забыли пароль?</a>
-                <a href="blank.html">Новая регистрация</a>
+                
+                  <a href="blank.html">Забыли пароль?</a>
+                  <a href="blank.html">Новая регистрация</a>
+                </div>
               </form>
             </section>
           </li>
@@ -110,13 +113,14 @@
         </li>
       </ul>
       <section class="catalog">
-        <ul class="catalog-list">
+        <ul class="catalog-list__main">
             <li class="catalog-list__item catalog-item">
                 <div class="catalog-item__image catalog-item__hit">
                     <img src="img/index_product-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
                     <span class="catalog-item__value">310 ₽<span class="catalog-item__heft">/кг</span></span>
                 </div>
                 <h2 class="catalog-item__topic"><a href="">Сливочное с апельсиновым <br>джемом и цитрусовой стружкой</a></h2>
+                <a href="" class="catalog-item__link">Быстрый просмотр</a>
             </li>
             <li class="catalog-list__item catalog-item">
                 <div class="catalog-item__image catalog-item__hit">
@@ -124,6 +128,7 @@
                     <span class="catalog-item__value">380 ₽<span class="catalog-item__heft">/кг</span></span>
                 </div>
                 <h2 class="catalog-item__topic"><a href="">Сливочно-кофейное с кусочками <br>шоколада</a></h2>
+                <a href="" class="catalog-item__link">Быстрый просмотр</a>
             </li>
             <li class="catalog-list__item catalog-item">
                 <div class="catalog-item__image catalog-item__hit">
@@ -131,6 +136,7 @@
                     <span class="catalog-item__value">355 ₽<span class="catalog-item__heft">/кг</span></span>
                 </div>
                 <h2 class="catalog-item__topic"><a href="">Сливочно-клубничное <br>с присыпкой из белого шоколада</a></h2>
+                <a href="" class="catalog-item__link">Быстрый просмотр</a>
             </li>
             <li class="catalog-list__item catalog-item">
                 <div class="catalog-item__image catalog-item__hit">
@@ -138,6 +144,7 @@
                     <span class="catalog-item__value">415 ₽<span class="catalog-item__heft">/кг</span></span>
                 </div>
                 <h2 class="catalog-item__topic"><a href="">Сливочное крем-брюле <br>с карамельной подливкой</a></h2>
+                <a href="" class="catalog-item__link">Быстрый просмотр</a>
             </li>
         </ul>
       </section>
@@ -176,7 +183,14 @@
         </div>
       </div>
       <div class="map-main">
-        <span class=""></span>
+        <div class="map-main__feedback">
+          <h2>Адрес главного офиса <br>и офлайн магазина:</h2>
+          <p class="map-main__topic"> ул. Большая Конюшенная,<br>19/8, Санкт-Петербург</p>
+          <h2>Для заказов по телефону:</h2>
+          <p>8 812 450-25-25</p>
+          <p class="map-main__topic">(с 10 до 20 ежедневно)</p>
+          <a class="map-main__link" href="">Форма обратной связи</a>
+        </div>
       </div>
     </main>
     <footer class="main-footer">
