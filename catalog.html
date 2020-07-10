@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=latin,cyrillic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=latin,cyrillic">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -50,7 +50,7 @@
             </li>
             <li class="user-navigation__item">
               <a class="user-navigation__link user-navigation__login" href="">Вход</a>
-              <section class="user-navigation__login-form">
+              <div class="user-navigation__login-form">
                 <form action="https://echo.htmlacademy.ru" method="post">
                   <input type="email" name="login" placeholder="email@example.com">
                   <input type="password" name="password" placeholder="••••••">
@@ -61,23 +61,23 @@
                     <a href="blank.html">Новая регистрация</a>
                   </div>
                 </form>
-              </section>
+              </div>
             </li>
             <li class="user-navigation__item--active">
               <a class="user-navigation__link user-navigation__basket--active" href="">2 Товара</a>
-                <section class="user-navigation__basket-form">
+                <div class="user-navigation__basket-form">
                     <form action="https://echo.htmlacademy.ru" method="post">
                         <div class="user-navigation__basket-block">       
                             <ul class="user-navigation__basket-list">
                                 <li><span></span></li>
-                                <li><img width="33" height="33" src="./img/ice-cream-mini-1.png"/></li>
+                                <li><img width="33" height="33" alt="icon buy" src="./img/ice-cream-mini-1.png"/></li>
                                 <li><p>Пломбир с апельсиновым джемом</p></li>
                                 <li><p>1,5 кг х <span>200 руб.</span></p></li>
                                 <li><p>300 руб.</p></li>
                             </ul> 
                             <ul class="user-navigation__basket-list">   
                                 <li><span></span></li>
-                                <li><img width="33" height="33" src="./img/ice-cream-mini-2.png"/></li>
+                                <li><img width="33" height="33" alt="icon buy" src="./img/ice-cream-mini-2.png"/></li>
                                 <li><p>Клубничный пломбир с присыпкой <br>из белого шоколада</p></li>
                                 <li><p>1,5 кг х <span>300 руб.</span></p></li>
                                 <li><p>450 руб.</p></li>
@@ -88,7 +88,7 @@
                             <button type="submit">Оформить заказ</button>
                         </div>
                     </form>
-                </section>
+                </div>
             </li>
           </ul>
         </div>
@@ -110,8 +110,8 @@
         </ul>
     </div>
     <h1 class="main-title">Сливочное мороженое</h1>
-    <section class="main-filter">
-        <form class="main-filter__form" action="#" method="GET">
+    <div class="main-filter">
+        <form class="main-filter__form" action="https://echo.htmlacademy.ru/" method="GET">
             <fieldset class="field-sorting">
                 <legend class="field-sorting__name">Сортировка:</legend>
                 <select class="field-sorting__select">
@@ -124,7 +124,7 @@
             <fieldset class="field-cost">
                 <legend class="field-cost__name">Цена: 100 ₽ – 500 ₽</legend>
                     <div class="field-cost__board">
-                        <input class="field-cost__input" type="range" multiple min="0" max="900" step="100" data-values="100 500">
+                        <input class="field-cost__input" type="range" min="0" max="900" step="100" data-values="100 500">
                         <input class="field-cost__second-input" type="range" min="100" max="500" step="10" value="500">
                     </div>
             </fieldset>
@@ -185,7 +185,7 @@
             </fieldset>
             <button class="main-filter__button" type="submit" >Применить</button>
         </form>
-      </section>
+      </div>
     <section class="catalog">
         <ul class="catalog-list">
             <li class="catalog-list__item catalog-item">
@@ -341,16 +341,16 @@
         </div>
         <ul class="copyright-list">
             <li class="copyright-list__item">
-                <a class="copyright-list__link" href="blank.html">
+                <a class="copyright-list__link" href="https://htmlacademy.ru/intensive/htmlcss">
                     <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="html Academy" >
                 </a>
             </li>
             <li class="copyright-list__item">
-                <p>Сделано в <a href="">HTML Academy</a> © 2019</p>
+                <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019</p>
             </li>  
         </ul>
     </footer>
-    <section class="visually-hidden">
+    <div class="visually-hidden">
       <p>Мы обязательно вам ответим!</p>
       <form action="https://echo.htmlacademy.ru" method="post">
         <p>
@@ -361,9 +361,6 @@
         </p>
       </form>
       <button type="button" name="close"></button>
-    </section>
+    </div>
   </body>
   </html>
-    </body>
-  </html>
-  

@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=latin,cyrillic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=latin,cyrillic">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page-body">
-    <input class="visually-hidden" type="radio" id="btn-1" name="toggle" checked>
-    <input class="visually-hidden" type="radio" id="btn-2" name="toggle">
-    <input class="visually-hidden" type="radio" id="btn-3" name="toggle">
+    <input class="visually-hidden" type="radio" id="slider-button-1" name="toggle" checked>
+    <input class="visually-hidden" type="radio" id="slider-button-2" name="toggle">
+    <input class="visually-hidden" type="radio" id="slider-button-3" name="toggle">
     <div class="page-body__background">
     <header class="main-header">
       <div class="main-header__line">
@@ -26,7 +26,7 @@
                   <a class="navigation-form__link" href="">Новинки</a>
                 </li>
                 <li class="navigation-form__item">
-                  <a href="">Сливочное</a>
+                  <a href="./catalog.html">Сливочное</a>
                 </li>
                 <li class="navigation-form__item">
                   <a href="">Щербеты</a>
@@ -54,7 +54,7 @@
           </li>
           <li class="user-navigation__item">
             <a class="user-navigation__link user-navigation__login" href="">Вход</a>
-            <section class="user-navigation__login-form">
+            <div class="user-navigation__login-form">
               <form action="https://echo.htmlacademy.ru" method="post">
                 <input type="email" name="login" placeholder="email@example.com">
                 <input type="password" name="password" placeholder="••••••">
@@ -65,7 +65,7 @@
                   <a href="blank.html">Новая регистрация</a>
                 </div>
               </form>
-            </section>
+            </div>
           </li>
           <li class="user-navigation__item">
             <a class="user-navigation__link user-navigation__basket" href="">Пусто</a>
@@ -95,9 +95,9 @@
 
         </div>
         <div class="main-slider__list">
-            <label class="main-slider__label-1" href="#">1</label>
-            <label class="main-slider__label-2" href="#">2</label>
-            <label class="main-slider__label-3" href="#">3</label>
+            <label class="main-slider__label-1" for="slider-button-1">1</label>
+            <label class="main-slider__label-2" for="slider-button-2">2</label>
+            <label class="main-slider__label-3" for="slider-button-3">3</label>
         </div>
       </div>
       <ul class="toppings">
@@ -228,17 +228,17 @@
       </div>
       <ul class="copyright-list">
           <li class="copyright-list__item">
-              <a class="copyright-list__link" href="blank.html">
+              <a class="copyright-list__link" href="https://htmlacademy.ru/intensive/htmlcss">
                   <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="html Academy" >
               </a>
           </li>
           <li class="copyright-list__item">
-              <p>Сделано в <a href="">HTML Academy</a> © 2019</p>
+              <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019</p>
           </li>  
       </ul>
   </footer>
   </div>
-  <section class="visually-hidden">
+  <div class="visually-hidden">
     <p>Мы обязательно вам ответим!</p>
     <form action="https://echo.htmlacademy.ru" method="post">
       <p>
@@ -249,8 +249,7 @@
       </p>
     </form>
     <button type="button" name="close"></button>
-  </section>
+  </div>
+  <script src="./js/scripts.js"></script>
 </body>
-</html>
-  </body>
 </html>
