@@ -765,7 +765,7 @@ li:hover.main-navigation__link::before {
     font-weight: bold;
     font-size: 18px;
     line-height: 24px;
-    
+    border: none;
     color: #FFFFFF;
     background: linear-gradient(180deg, #F26843 0%, #E74A35 100%);
     box-shadow: 0px 2px 2px rgba(172, 16, 0, 0.64);
@@ -1869,7 +1869,6 @@ li.pagination__list--active {
     left: 50%;
     z-index: 100;
     display: block;
-    display: none;
     box-sizing: border-box;
     width: 475px;
     height: 440px;
@@ -1879,6 +1878,14 @@ li.pagination__list--active {
     color: #323232;
     background-color: #f8f7f4;
     border-radius: 6px;
+}
+
+.main-popup__show {
+    display: block;
+}
+
+.main-popup__hide {
+    display: none;
 }
 
 .main-popup h2 {
