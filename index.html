@@ -59,7 +59,7 @@
                 <input type="email" name="login" placeholder="email@example.com">
                 <input type="password" name="password" placeholder="••••••">
                 <div class="user-navigation__login-form-links">
-                <button type="submit" >Войти</button>
+                  <button type="submit" >Войти</button>
                 
                   <a href="blank.html">Забыли пароль?</a>
                   <a href="blank.html">Новая регистрация</a>
@@ -238,17 +238,15 @@
       </ul>
   </footer>
   </div>
-  <div class="visually-hidden">
-    <p>Мы обязательно вам ответим!</p>
+  <div class="main-popup">
+    <h2>Мы обязательно вам ответим!</h2>
+    <button class="main-popup__close" type="button" name="close" title="Закрыть"></button>
     <form action="https://echo.htmlacademy.ru" method="post">
-      <p>
-        <input type="text" name="user-name" placeholder="Имя Фамилия">
-        <input type="email" name="user-email" placeholder="email@example.com">
-        <textarea name="user-text" rows="8" placeholder="В свободной форме"></textarea>
-        <button type="submit">Отправить</button>
-      </p>
+      <input type="text" name="user-name" placeholder="Имя Фамилия">
+      <input type="email" name="user-email" placeholder="email@example.com">
+      <textarea name="user-text" rows="8" placeholder="В свободной форме"></textarea>
+      <button class="main-popup__main-button" type="submit">Отправить</button>
     </form>
-    <button type="button" name="close"></button>
   </div>
   <script src="./js/scripts.js"></script>
 </body>
