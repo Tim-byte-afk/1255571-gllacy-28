@@ -1137,14 +1137,14 @@ img {
 
 .toppings-raspberry {
     grid-column: 1/2;
-    background-image: url("../img/raspberry_background.jpg");
+    background-image: url("../img/raspberry-background.jpg");
     background-repeat: no-repeat;
     border-radius: 16px;
 }
 
 .toppings-chocolate {
     grid-column: 2/3;
-    background-image: url("../img/chocolate_background.jpg");
+    background-image: url("../img/chocolate-background.jpg");
     background-repeat: no-repeat;
     border-radius: 16px;
 }
@@ -1455,7 +1455,7 @@ a.toppings__link {
 
 .novelty {
     grid-column: 1/2;
-    background-image: url("../img/strawberry_background.jpg");
+    background-image: url("../img/strawberry-background.jpg");
     color: var(--basic-extra-dark);
     float: left;
     padding: 16px 20px 23px 20px;
