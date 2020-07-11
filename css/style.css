@@ -884,6 +884,7 @@ img {
     margin-top: 13px;
     text-align: left;
     width: 50%;
+    vertical-align: top;
 }
 
 .footer-navigatioin__item {
@@ -1279,6 +1280,7 @@ a.toppings__link {
 
 .catalog-item:hover .catalog-item__link {
     display: inline-block;
+    vertical-align: top;
 }
 
 .catalog-list__item h2 {
@@ -1447,6 +1449,7 @@ a.toppings__link {
 
 .information__item {
     display: inline-block;
+    vertical-align: top;
     border-radius: 16px;
 }
 
@@ -1565,6 +1568,7 @@ a.toppings__link {
 .breadcrumbs__item {
     position: relative;
     display: inline-block;
+    vertical-align: top;
     padding-right: 23px;
     font-size: 14px;
     line-height: 16px;

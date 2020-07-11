@@ -10,9 +10,15 @@
 </head>
 
 <body class="page-body">
-    <input class="visually-hidden" type="radio" id="slider-button-1" name="toggle" checked>
-    <input class="visually-hidden" type="radio" id="slider-button-2" name="toggle">
-    <input class="visually-hidden" type="radio" id="slider-button-3" name="toggle">
+    <label>
+        <input class="visually-hidden" type="radio" id="slider-button-1" name="toggle" checked>
+    </label>
+    <label>
+        <input class="visually-hidden" type="radio" id="slider-button-2" name="toggle">
+    </label>
+    <label>
+        <input class="visually-hidden" type="radio" id="slider-button-3" name="toggle">
+    </label>
     <div class="page-body__background">
         <header class="main-header">
             <div class="main-header__line">
@@ -50,7 +56,9 @@
                         <a class="user-navigation__link user-navigation__search-link" href=""></a>
                         <div class="user-navigation__search-form">
                             <form action="https://echo.htmlacademy.ru" method="post">
-                                <input type="text" name="search" placeholder="Крем-брюле" />
+                              <label>
+                                <input type="text" name="search" placeholder="Крем-брюле" id="search" />
+                              </label>
                             </form>
                         </div>
                     </li>
@@ -58,8 +66,12 @@
                         <a class="user-navigation__link user-navigation__login" href="">Вход</a>
                         <div class="user-navigation__login-form">
                             <form action="https://echo.htmlacademy.ru" method="post">
+                              <label>
                                 <input type="email" name="login" placeholder="email@example.com">
+                              </label>
+                              <label>
                                 <input type="password" name="password" placeholder="••••••">
+                              </label>
                                 <div class="user-navigation__login-form-links">
                                     <button type="submit">Войти</button>
 
@@ -118,7 +130,7 @@
                 <ul class="catalog-list__main">
                     <li class="catalog-list__item catalog-item">
                         <div class="catalog-item__image catalog-item__hit">
-                            <img src="img/index_product-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                            <img src="img/index-product-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
                             <span class="catalog-item__value">310 ₽<span class="catalog-item__heft">/кг</span></span>
                         </div>
                         <h2 class="catalog-item__topic"><a href="">Сливочное с апельсиновым <br>джемом и цитрусовой стружкой</a></h2>
@@ -126,7 +138,7 @@
                     </li>
                     <li class="catalog-list__item catalog-item">
                         <div class="catalog-item__image catalog-item__hit">
-                            <img src="img/index_product-2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+                            <img src="img/index-product-2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
                             <span class="catalog-item__value">380 ₽<span class="catalog-item__heft">/кг</span></span>
                         </div>
                         <h2 class="catalog-item__topic"><a href="">Сливочно-кофейное с кусочками <br>шоколада</a></h2>
@@ -134,7 +146,7 @@
                     </li>
                     <li class="catalog-list__item catalog-item">
                         <div class="catalog-item__image catalog-item__hit">
-                            <img src="img/index_product-3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+                            <img src="img/index-product-3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
                             <span class="catalog-item__value">355 ₽<span class="catalog-item__heft">/кг</span></span>
                         </div>
                         <h2 class="catalog-item__topic"><a href="">Сливочно-клубничное <br>с присыпкой из белого шоколада</a></h2>
@@ -142,7 +154,7 @@
                     </li>
                     <li class="catalog-list__item catalog-item">
                         <div class="catalog-item__image catalog-item__hit">
-                            <img src="img/index_product-4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+                            <img src="img/index-product-4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
                             <span class="catalog-item__value">415 ₽<span class="catalog-item__heft">/кг</span></span>
                         </div>
                         <h2 class="catalog-item__topic"><a href="">Сливочное крем-брюле <br>с карамельной подливкой</a></h2>
@@ -178,7 +190,9 @@
                     <div class="subscription__container">
                         <p>Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
                         <form action="https://echo.htmlacademy.ru" method="post">
+                          <label>
                             <input class="subscription__input" type="email" placeholder="email@example.com">
+                          </label>
                             <button class="subscription__button">Отправить</button>
                         </form>
                     </div>
@@ -244,9 +258,15 @@
         <h2>Мы обязательно вам ответим!</h2>
         <button class="main-popup__close" type="button" name="close" aria-label="Закрыть"></button>
         <form action="https://echo.htmlacademy.ru" method="post">
+          <label>
             <input type="text" name="user-name" placeholder="Имя Фамилия">
+          </label>
+          <label>
             <input type="email" name="user-email" placeholder="email@example.com">
+          </label>
+          <label>
             <textarea name="user-text" rows="8" placeholder="В свободной форме"></textarea>
+          </label>
             <button class="main-popup__main-button" type="submit">Отправить</button>
         </form>
     </div>
