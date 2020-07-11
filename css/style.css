@@ -79,6 +79,10 @@ img {
     grid-column: 1/-1;
 }
 
+.catalog-footer {
+    grid-column: 1/-1;
+}
+
 /* Шапка */
 
 .main-header {
@@ -199,14 +203,14 @@ a.main-navigation__link--active {
 .user-navigation__item {
     position: relative;
     display: inline-block;
-    margin-left: 10px;
+    margin-left: 7px;
     vertical-align: top;
 }
 
 .user-navigation__item--active {
     position: relative;
     display: inline-block;
-    margin-left: 10px;
+    margin-left: 6px;
     vertical-align: top;
 }
 
@@ -239,7 +243,7 @@ a.user-navigation__link {
     border-radius: 50%;
     content: ""; 
     position: absolute;
-    left: -25px;
+    left: -32px;
 }
 
 .user-navigation__search-link::before {
@@ -262,7 +266,7 @@ a.user-navigation__link {
 
 .user-navigation__login {
     position: relative;
-    padding: 8px 16px 8px 44px;
+    padding: 8px 15px 8px 44px;
     border-radius: 20px;
     vertical-align: top;
 }
@@ -722,19 +726,28 @@ li:hover.main-navigation__link::before {
     background: url("../img/map.png");
 }
 
+.map-main::before {
+    content: "";
+    position: absolute;
+    top: 135px;
+    left: 265px;
+    width: 80px;
+    height: 140px;
+    background: url("../img/pin.svg") no-repeat;
+}
+
 .map-main__feedback {
     position: absolute;
     top: 62px;
     right: 27px;
-    padding: 32px 25px 31px 25px;
+    padding: 28px 25px 31px 25px;
     font-size: 14px;
     line-height: 20px;
     background: #FEFEFE;
     border-radius: 16px;
     color: #323232;
     z-index: 10;
-    height: 240px;
-    /* width: 303px; */
+    height: 245px;
 }
   
 .map-main__feedback h2,
@@ -747,7 +760,14 @@ li:hover.main-navigation__link::before {
 }
 
 .map-main__topic {
-    padding-bottom: 30px;
+    padding-bottom: 24px;
+}
+
+.map-main__topic span {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
 }
 
 .map-main__feedback p {
@@ -759,8 +779,8 @@ li:hover.main-navigation__link::before {
 }
 
 .map-main__link {
-    padding-top: 201px;
-    padding: 13px 28px;
+    /* padding-top: 210px; */
+    padding: 9px 28px;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -791,13 +811,19 @@ li:hover.main-navigation__link::before {
     padding: 18px 0px 26px 0px;
 }
 
+.catalog-footer {
+    width: 100%;
+    padding: 18px 0px 26px 0px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
 .social-list {
     float: left;
     width: 25%;
     padding-left: 0px;
     padding-right: 0px;
     margin-bottom: 0px;
-    margin-top: 18px;
+    margin-top: 15px;
 }
 
 .social-list__item {
@@ -1033,7 +1059,7 @@ li:hover.main-navigation__link::before {
 }
 
 a.main-slider__button {
-    padding: 9px 40px 10px 40px;
+    padding: 11px 40px 15px 40px;
 }
 
 .main-slider__button {
@@ -1097,7 +1123,7 @@ li.toppings__item {
 .toppings p {
     margin: 0px;
     margin-top: 16px;
-    margin-bottom: 57px;
+    margin-bottom: 54px;
     font-size: 18px;
     line-height: 22px;
     text-align: left;
@@ -1109,7 +1135,7 @@ li.toppings__item {
 }
 
 a.toppings__link {
-    padding: 15px 22px 15px 22px;
+    padding: 13px 22px 13px 22px;
     background: linear-gradient(180deg, #F26843 0%, #E74A35 100%);
     box-shadow: 0px 2px 2px rgba(172, 16, 0, 0.64);
     border-radius: 70px;
@@ -1209,6 +1235,7 @@ a:active.toppings__link {
     display: block;
     content: "";
     position: absolute;
+    height: 405px;
     top: -10px;
     left: -10px;
     bottom: -60px;
@@ -1301,7 +1328,7 @@ h2.catalog-item__topic {
 
 .about-shop {
     margin-top: 0px;
-    margin-bottom: 40px;
+    margin-bottom: 37px;
     display: grid;
     grid-column: 1/-1;
     background: url("../img/pattern.png") repeat;
@@ -1353,7 +1380,7 @@ li.about-shop__item:nth-child(2) {
     padding-left: 75px;
     grid-column: 3/5;
     grid-row: 2/3;
-    background: url("../img/cow.svg") no-repeat 20px 5px;
+    background: url("../img/cow.svg") no-repeat 20px 8px;
 }
 
 li.about-shop__item:nth-child(3) {
@@ -1362,7 +1389,7 @@ li.about-shop__item:nth-child(3) {
     padding-left: 55px;
     grid-column: 1/3;
     grid-row: 3/4;
-    background: url("../img/eco.svg") no-repeat 0px 8px;
+    background: url("../img/eco.svg") no-repeat 0px 11px;
 }
 
 li.about-shop__item:nth-child(4) {
@@ -1371,7 +1398,7 @@ li.about-shop__item:nth-child(4) {
     padding-left: 75px;
     grid-column: 3/5;
     grid-row: 3/4;
-    background: url("../img/thermometer.svg") no-repeat 20px 8px;
+    background: url("../img/thermometer.svg") no-repeat 20px 11px;
 }
 
 /* Новое и подписка */
@@ -1396,7 +1423,7 @@ li.about-shop__item:nth-child(4) {
     background-image: url("../img/strawberry_background.jpg");
     color: var(--basic-extra-dark);
     float: left;
-    padding: 23px 20px 23px 20px;
+    padding: 16px 20px 23px 20px;
 }
 
 p.novelty__title {
@@ -1411,6 +1438,7 @@ p.novelty__title {
 
 h2.novelty__topic {
     margin: 0px;
+    margin-top: 3px;
     display: block;
     font-size: 24px;
     line-height: 30px;
@@ -1430,7 +1458,7 @@ h2.novelty__topic {
     grid-column: 2/3;
     background: var(--basic-white-post) url("../img/bg-post.svg");
     border-radius: 16px;
-    padding: 5px 6px 5px 6px;
+    padding: 7px 6px 5px 6px;
 }
 
 .subscription__container {
@@ -1462,8 +1490,9 @@ h2.novelty__topic {
 }
 
 .subscription__button {
-    margin-left: 10px;
-    padding: 14px 19px 13px 19px;
+    margin-left: 9px;
+    margin-top: 7px;
+    padding: 10px 18px 10px 18px;
     font-size: 18px;
     line-height: 24px;
     font-weight: bold;
@@ -1508,7 +1537,7 @@ h2.novelty__topic {
 .breadcrumbs__item {
     position: relative;
     display: inline-block;
-    padding-right: 20px;
+    padding-right: 23px;
     font-size: 14px;
     line-height: 16px;
     font-weight: 400;
@@ -1560,10 +1589,6 @@ a:active.breadcrumbs__link {
     color: var(--basic-white);
 }
 
-.main-filter {
-    /* margin-bottom: 25px; */
-}
-
 .main-filter button,
 .field-sorting,
 .field-cost,
@@ -1594,8 +1619,6 @@ a:active.breadcrumbs__link {
 .field-richness__board {
     padding-top: 5px;
 }
-
-.field-extender__board {}
 
 .main-filter__form legend {
     padding-left: 16px;
@@ -1804,7 +1827,7 @@ input[type=range]::-webkit-slider-thumb:hover {
 .pagination {
     float: right;
     margin: 0;
-    margin-top: 35px;
+    margin-top: 46px;
     margin-bottom: 30px;
     padding: 0;
     font-size: 0;
@@ -1816,7 +1839,7 @@ input[type=range]::-webkit-slider-thumb:hover {
     width: 26px;
     height: 26px;
     margin: 0;
-    margin-left: 3px;
+    margin-left: 4px;
     font-weight: 500;
     font-size: 16px;
     line-height: 26px;
